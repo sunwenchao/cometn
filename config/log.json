@@ -1,0 +1,19 @@
+{
+    "appenders":[
+
+        {
+            "type":"file",
+            "filename":"/home/sunwenchao/comet.log",
+            "maxLogSize":102400,
+            "category":"test",
+            "level": "DEBUG"
+        },
+
+        {
+            "type": "console",
+            "category":"test",
+            "level": "INFO"
+        }
+
+    ]
+}

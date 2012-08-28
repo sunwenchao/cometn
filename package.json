@@ -1,0 +1,13 @@
+{ "name" : "comet"
+    , "description" : "Realtime PubSub server push."
+    , "version" : "0.0.1"
+    , "author" : "Sunwenchao"
+    , "engine" : [ "node >= 0.8" ]
+    , "main" : "./app"
+    , "dependencies" :
+        {
+            "socket.io" : "",
+            "redis" : "",
+            "underscore" : ""
+        }
+}

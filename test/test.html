@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>comet test</title>
+</head>
+
+<body>
+<div class="container" id="container">
+
+</div>
+<script src="underscore.js"></script>
+<script src="backbone.js"></script>
+<script src="socket.io.js"></script>
+<script src="../browser/labi-comet.js"></script>
+
+<script>
+    var comet = new LComet({
+        host : 'http://localhost:9000?sid=YM19C54FA297A9EA90C9D440804BA7C359'
+    });
+
+    comet.on( 'info', function(data) {
+        comet.subscribe( 'test_private_' + data.uid, function( data ) {
+            console.log( data );
+        });
+    })
+</script>
+</body>
+</html>
